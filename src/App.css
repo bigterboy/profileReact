@@ -1,0 +1,254 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App main {
+  flex-grow: 1;
+}
+
+.App header {
+  display: flex;
+  justify-content: space-around;
+  width: 400pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+body{
+  font-family: 'Source San Pro';
+  line-height:1.5;
+  background:#f2f2f2;
+  color:#323232;
+}
+
+img{
+max-width: 100%;
+}
+
+
+.icon{
+  fill:currentColor;
+  display:inline-block;
+  font-size:inherit;
+  height: 1em;
+  overflow: visible;
+}
+
+
+.container{
+  max-height: 2000px;
+  margin:40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+section{
+  display: grid;
+  grid-template-columns:1fr 4fr;
+  grid-gap:20px;   /*phần bên phải di chuyển*/
+  padding:24px 0;  /*giúp cách ra giữa các section cho xa nhau tý cho đẹp*/
+  border-bottom:1px solid lightgrey;
+}
+
+section:last-child{
+  border-bottom: none;   /*lấy cái section cuối cùng thì không có đường kẻ gạch ở dưới cùng*/
+}
+
+.section-title{
+  font-weight:bold;
+  font-size:18px;
+}
+
+
+section .avatar{
+  width:130px;
+}
+
+
+.my-name{
+  font-size:48px;
+line-height:1;
+}
+
+.my-title{
+  font-size:24px;
+  font-weight:300;
+  color:#236FB2;
+}
+
+
+.links{
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+
+.link-item{
+  align-items: center;
+  flex: 1;
+}
+
+.link-item svg{
+  margin-right: 10px;
+}
+
+
+.job-title-container{
+
+}
+
+
+.job{
+  padding-bottom:24px;
+  margin-bottom:24px;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+
+.job:last-child{
+  border-bottom: none;
+}
+
+
+.job-title-container{
+  display: flex;
+  justify-content:space-between;   /*cái này thì 2 div nắm ở 2 bên*/
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+.job-company{
+  font-weight:bold;
+  line-height:1.2;
+}
+
+.job-title{
+
+}
+
+
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 24px;
+}
+
+.skills-container ul {
+  margin-left: -20px;
+  list-style-type: disc;
+}
+
+
+
+.interests-container{
+  justify-content: start;
+
+}
+.interests-container img{
+  margin-right:32px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+.skills{
+  width:500px;
+}
+
+
+.skills li{
+  margin: 20px 0;
+}
+
+.bar{
+  background:black;
+  display: block;
+  height: 2px;
+  border:1px solid rgba(0, 0, 0, 0.3);
+  border-radius:3px;
+  overflow:hidden;
+  box-shadow: 0 0 10px #2187b3;
+}
+
+
+
+.bar span{
+  height: 2px;
+  float: left;
+  background:yellow;
+}
+
+.html{
+  width:90%;
+  animation: html 3s;
+}
+
+.css3{
+  width:30%;
+  animation: css3 3s;
+}
+
+.jquery{
+  width:65%;
+  animation: jquery 3s;
+}
+
+.javascipt{
+  width:80%;
+  animation: javascipt 3s;
+}
+
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+
+
+@keyframes css3{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+
+@keyframes jquery{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+
+@keyframes javascipt{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
